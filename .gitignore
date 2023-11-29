@@ -1,0 +1,7 @@
+/target/
+/project/
+.DS_Store
+.idea/
+*.iml
+*.class
+

@@ -1,0 +1,19 @@
+version: '3'
+services:
+  myplay:
+    image: play-scala-seed:1.0-SNAPSHOT
+    environment:
+      - APPLICATION_SECRET=dhU4QIVo8n8t0^ARBv9Wm7G@bhRjXA71fdPu1NYy3V7Z6E^`r=rPAhu<>nxN^NU<
+      - DB_PROFILE=slick.jdbc.MySQLProfile$$
+      - DB_DRIVER=com.mysql.jdbc.Driver
+      - DB_URL=jdbc:mysql://localhost/example?serverTimezone=UTC
+      - DB_USER=root
+      - DB_PASSWORD=root
+    ports:
+      - 9000:9000
+  mysqldb:
+    image: mysql
+    environment:
+        - MYSQL_ROOT_PASSWORD=root
+    ports:
+        - 3306:3306
