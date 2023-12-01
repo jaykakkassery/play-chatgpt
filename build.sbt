@@ -1,5 +1,5 @@
-name := """play-scala-seed"""
-organization := "com.example"
+name := """play-chat-gpt"""
+organization := "com.jp"
 
 version := "1.0-SNAPSHOT"
 

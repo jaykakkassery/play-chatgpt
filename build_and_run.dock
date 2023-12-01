@@ -1,0 +1,3 @@
+#!/bin/bash
+docker build -t jpkakkassery/play-chatgpt:latest .
+docker run -p 9000:9000 jpkakkassery/play-chatgpt
